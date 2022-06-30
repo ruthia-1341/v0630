@@ -20,8 +20,8 @@ namespace v0630
         {
             InitializeComponent();
 
-            label1.Left = rand.Next(ClientSize.Width- label2.Width);
-            label1.Top = rand.Next(ClientSize.Height - label2.Height);
+            label1.Left = rand.Next(ClientSize.Width- label1.Width);
+            label1.Top = rand.Next(ClientSize.Height - label1.Height);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
