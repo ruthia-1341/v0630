@@ -27,14 +27,22 @@ namespace v0630
 
             label1.Left += vx;
             label1.Top += vy;
-            if (label1.Top < 0 || label1.Top > ClientSize.Height)
-            {
+            if (label1.Top < 0 ){
+                vy = Math.Abs(vy);
+            }
+            if (label1.Top > ClientSize.Height) {
                 vy = -vy;
             }
-            if (label1.Left < 0 || label1.Left > ClientSize.Width)
-            {
+            
+            if (label1.Left < 0 ) {
+                vx = Math.Abs(vx);
+              
+            }
+            if (label1.Left > ClientSize.Width) {
                 vx = -vx;
-            }//vx=math.abs(vx);正の値を返す
+            }
+
+            //vx=math.abs(vx);正の値を返す
         }
 
         private void Form1_Load(object sender, EventArgs e)
