@@ -29,7 +29,7 @@ namespace v0630
             label1.Top += vy;
             if (label1.Top < 0 || label1.Top > ClientSize.Height)
             {
-                int vx = Math.Abs(vx);
+                vy = -vy;
             }
             if (label1.Left < 0 || label1.Left > ClientSize.Width)
             {
