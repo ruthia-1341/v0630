@@ -18,6 +18,7 @@ namespace v0630
         //静的（最初に決めておく）　static　↔動的（実行時に変更可能）
         static Random rand = new Random();
 
+
         public Form1()
         {
             InitializeComponent();
