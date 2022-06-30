@@ -34,7 +34,7 @@ namespace v0630
             if (label1.Left < 0 || label1.Left > ClientSize.Width)
             {
                 vx = -vx;
-            }
+            }//vx=math.abs(vx);正の値を返す
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace v0630
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
