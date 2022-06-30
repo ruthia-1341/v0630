@@ -44,7 +44,11 @@ namespace v0630
 
             //vx=math.abs(vx);正の値を返す
 
-            if (label2.Left <= label1.Right && label2.Top <= label1.Bottom && label2.Right > label1.Left && label2.Bottom > label1.Top)
+            /* if (label2.Left <= label1.Right && label2.Top <= label1.Bottom && label2.Right > label1.Left && label2.Bottom > label1.Top)
+             {
+                 timer1.Enabled = false;
+             }*/
+            if (fpos.X <= label1.Right && fpos.Y <= label1.Bottom && fpos.X > label1.Left && fpos.Y > label1.Top)
             {
                 timer1.Enabled = false;
             }
