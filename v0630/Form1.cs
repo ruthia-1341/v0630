@@ -29,12 +29,22 @@ namespace v0630
             label1.Top += vy;
             if (label1.Top < 0 || label1.Top > ClientSize.Height)
             {
-                vy = -vy;
+                int vx = Math.Abs(vx);
             }
             if (label1.Left < 0 || label1.Left > ClientSize.Width)
             {
                 vx = -vx;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label1_Click(object sender, EventArgs e)
