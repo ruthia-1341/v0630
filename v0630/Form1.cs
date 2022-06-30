@@ -21,11 +21,13 @@ namespace v0630
         public Form1()
         {
             InitializeComponent();
-
+            //ラベル1
             label1.Left = rand.Next(ClientSize.Width- label1.Width);
             label1.Top = rand.Next(ClientSize.Height - label1.Height);
+            //ラベル２
             label3.Left = rand.Next(ClientSize.Width - label3.Width);
             label3.Top = rand.Next(ClientSize.Height - label3.Height);
+            //ラベル３
             label4.Left = rand.Next(ClientSize.Width - label4.Width);
             label4.Top = rand.Next(ClientSize.Height - label4.Height);
         }
@@ -36,16 +38,18 @@ namespace v0630
             Point fpos = PointToClient(spos);
             label2.Left = fpos.X - label2.Width / 2; 
             label2.Top = fpos.Y - label2.Height / 2;
-
+            //ラベル1
             label1.Left += vx1;
             label1.Top += vy1;
+            //ラベル２
             label3.Left += vx2;
             label3.Top += vy2;
+            //ラベル３
             label4.Left += vx3;
             label4.Top += vy3;
 
 
-
+            //ラベル1
             if (label1.Top < 0 ){
                 vy1 = Math.Abs(vy1);
             }
@@ -62,6 +66,7 @@ namespace v0630
             }
 
 
+            //ラベル２
             if (label3.Top < 0)
             {
                 vy2 = Math.Abs(vy2);
@@ -82,6 +87,7 @@ namespace v0630
             }
 
 
+            //ラベル３
             if (label4.Top < 0)
             {
                 vy3 = Math.Abs(vy3);
