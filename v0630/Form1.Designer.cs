@@ -46,9 +46,10 @@ namespace v0630
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(-3, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.Size = new System.Drawing.Size(44, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "★";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -65,18 +66,20 @@ namespace v0630
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, -2);
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(47, -2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 15);
+            this.label3.Size = new System.Drawing.Size(44, 37);
             this.label3.TabIndex = 2;
             this.label3.Text = "★";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, -2);
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(97, -2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 15);
+            this.label4.Size = new System.Drawing.Size(44, 37);
             this.label4.TabIndex = 3;
             this.label4.Text = "★";
             this.label4.Click += new System.EventHandler(this.label4_Click);
