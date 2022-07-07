@@ -12,11 +12,11 @@ namespace v0630
 {
     public partial class Form1 : Form
     {
-        
 
-        int[] vx = new int[100];
-        int[] vy = new int[100];
-        Label[] labels = new Label[100];
+        static int ChrMax => 100;
+        int[] vx = new int[ChrMax];
+        int[] vy = new int[ChrMax];
+        Label[] labels = new Label[ChrMax];
 
         static Random rand = new Random();
             
@@ -28,7 +28,7 @@ namespace v0630
         public Form1()
         {
             InitializeComponent();
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < ChrMax; i++)
             {
                 vx[i] = rand.Next(-10, 11);
                 vy[i] = rand.Next(-10, 11);
@@ -62,7 +62,7 @@ namespace v0630
             label2.Left = fpos.X - label2.Width / 2; 
             label2.Top = fpos.Y - label2.Height / 2;
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < ChrMax; i++)
             {
                 labels[i].Left += vx[i];
                 labels[i].Top += vy[i];
