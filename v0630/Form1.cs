@@ -82,12 +82,12 @@ namespace v0630
 
                 if (fpos.X <= labels[i].Right && fpos.Y <= labels[i].Bottom && fpos.X > labels[i].Left && fpos.Y > labels[i].Top)
                 {
-                    timer1.Enabled = false;
+                    labels[i].Visible = false;
                 }
 
                 if (label2.Left <= labels[i].Right && label2.Top <= labels[i].Bottom && label2.Right > labels[i].Left && label2.Bottom > labels[i].Top)
                 {
-                    timer1.Enabled = false;
+                    labels[i].Visible = false;
                 }
 
             }
