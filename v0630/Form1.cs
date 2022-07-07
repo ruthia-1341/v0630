@@ -41,8 +41,20 @@ namespace v0630
                 labels[i].Left = rand.Next(ClientSize.Width - labels[i].Width);
                 labels[i].Top = rand.Next(ClientSize.Height - labels[i].Height);
             }
+            for (int i = 0; i < ChrMax; i++)
+            {
+                vx[i] = rand.Next(-10, 11);
+                vy[i] = rand.Next(-10, 11);
 
-          
+                labels[i] = new Label();
+                labels[i].AutoSize = true;
+                labels[i].Text = "★";
+                Controls.Add(labels[i]);
+
+                labels[i].Left = rand.Next(ClientSize.Width - labels[i].Width);
+                labels[i].Top = rand.Next(ClientSize.Height - labels[i].Height);
+            }
+
             /*
             //ラベル1
             label1.Left = rand.Next(ClientSize.Width- label1.Width);
